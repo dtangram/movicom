@@ -1,0 +1,11 @@
+/* CSS Document */
+#movieWrap .setA > li:nth-child(1), #movieWrap .setB > li:nth-child(1), #movieWrap .setC > li:nth-child(1), #movieWrap .setD > li:nth-child(1), #movieWrap .setE > li:nth-child(1), #movieWrap .setF > li:nth-child(1), #movieWrap .setG > li:nth-child(1), #movieWrap .setH > li:nth-child(1), #movieWrap .setI > li:nth-child(1), #movieWrap .setJ > li:nth-child(1), #movieWrap .setK > li:nth-child(1) {
+  border-radius: 7.4%;
+  position: relative; }
+#movieWrap .setA > li:nth-child(2), #movieWrap .setA > li:nth-child(3), #movieWrap .setA > li:nth-child(4), #movieWrap .setB > li:nth-child(2), #movieWrap .setB > li:nth-child(3), #movieWrap .setB > li:nth-child(4), #movieWrap .setC > li:nth-child(2), #movieWrap .setC > li:nth-child(3), #movieWrap .setC > li:nth-child(4), #movieWrap .setD > li:nth-child(2), #movieWrap .setD > li:nth-child(3), #movieWrap .setD > li:nth-child(4), #movieWrap .setE > li:nth-child(2), #movieWrap .setE > li:nth-child(3), #movieWrap .setE > li:nth-child(4), #movieWrap .setF > li:nth-child(2), #movieWrap .setF > li:nth-child(3), #movieWrap .setF > li:nth-child(4), #movieWrap .setG > li:nth-child(2), #movieWrap .setG > li:nth-child(3), #movieWrap .setG > li:nth-child(4), #movieWrap .setH > li:nth-child(2), #movieWrap .setH > li:nth-child(3), #movieWrap .setH > li:nth-child(4), #movieWrap .setI > li:nth-child(2), #movieWrap .setI > li:nth-child(3), #movieWrap .setI > li:nth-child(4), #movieWrap .setJ > li:nth-child(2), #movieWrap .setJ > li:nth-child(3), #movieWrap .setJ > li:nth-child(4), #movieWrap .setK > li:nth-child(2), #movieWrap .setK > li:nth-child(3), #movieWrap .setK > li:nth-child(4) {
+  position: relative; }
+
+#twoTen #movieWrap .setJ > li:nth-child(3) {
+  position: relative; }
+  #twoTen #movieWrap .setJ > li:nth-child(3) .bodyCopy li:nth-child(2) {
+    width: 40%; }

@@ -1,0 +1,688 @@
+@charset "utf-8";
+/* CSS Document */
+
+$movColor1: #000000;
+$movColor2: #FFFFFF;
+$movColor3: #BE8837;
+$movColor4: #503000;
+$movColor5: #804D00;
+$movFont: 'Titillium Web', sans-serif;
+$movFontSize: 20px;
+$movFontBold: bold;
+$movFontCenter: center;
+$fullWidth: 100%;
+$fullHeight: 100%;
+$floatLeft: left;
+$floatRight: right;
+$decorateNone: none;
+$decorateUnder: underline;
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: $movFont;
+	font-size: $movFontSize;
+	color: $movColor1;
+	background: $movColor5;
+}
+
+#container
+{
+	width: 100%;
+	height: 100%;	
+}
+
+header
+{
+	position: fixed;
+	z-index: 999;
+	width: $fullWidth;
+	height: 35.9%;
+	background: url(../img/movie-theater2.jpg) no-repeat 50% 50% / cover $movColor1;
+	margin-top: 0;
+	-webkit-box-shadow: 0 20px 27px 2px rgba(0,0,0,.75);
+	-moz-box-shadow: 0 20px 27px 2px rgba(0,0,0,.75);
+	box-shadow: 0 10px 15px 2px rgba(0,0,0,.80);
+	overflow: hidden;
+}
+
+#info
+{
+	font-weight: $movFontBold;
+	text-align: $movFontCenter;
+	width: $fullWidth;
+	background: $movColor3;
+	padding: .5% 0;
+	border-bottom: solid 5px $movColor4;
+	
+	h1
+	{
+		font-size: 1em;
+	}
+}
+
+#logo
+{
+	float: $floatLeft;
+	margin: 5.1% 0 0 1%;
+	position: absolute;
+	z-index: 3;
+	width: 21.25%;
+	
+	img
+	{
+		width: $fullWidth;
+		height: $fullWidth;
+	}
+	
+}
+
+#headOne
+{
+	background: $movColor5;
+	width: $fullWidth;
+	padding: .3% .5%;
+	float: $floatLeft;
+	position: absolute;
+	z-index: 2;
+	
+	h1
+	{
+		font-size: 1em;
+		width: 490px;
+		float: left;
+		margin: .3% 0 0 .4%;
+	}
+}
+
+#menuHead
+{
+	list-style: none;
+	float: $floatRight;
+	font-size: .9em;
+	width: 440px;
+	
+	a
+	{
+		color: $movColor2;
+		text-decoration: $decorateNone;
+	}
+	
+	a:hover
+	{
+		text-decoration: $decorateUnder;
+		color: $movColor3;
+	}
+	
+	li
+	{
+		float: $floatLeft;
+		margin-right: 2%;
+	}
+	
+	.current a
+	{
+		text-decoration: $decorateUnder;
+		color: $movColor2;
+	}
+}
+
+#headBck
+{
+	width: 100%;
+	height: 100%;
+	float: $floatLeft;
+	position: relative;
+	z-index: 1;
+}
+
+section
+{
+	position: relative;
+}
+
+#sevEig, #nine, #twoThou, #twoTen
+{
+	height: 900px;
+	width: $fullWidth;
+	background: url(../img/filmBck.png) repeat-x 50% 0%;
+	float: $floatLeft;
+	position: relative;
+	z-index: 6;
+	padding-top: 415px;
+}
+
+/*#clapperOne, #reelWrapA, #clapperTwo, #reelWrapB, #nine, #twoThou, #twoTen
+{
+	display: none;
+	opacity: 0;
+}*/
+
+h1
+{
+	color: $movColor2;
+	font-size: 1.3em;
+	font-weight: $movFontBold;
+}
+
+h2
+{
+	color: $movColor2;
+	font-size: .95em;
+}
+
+#clapperOne, #clapperThree, #clapperFive, #clapperSeven
+{
+	float: $floatLeft;
+	margin: 7.3% 0 0 4.7%;
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	width: 2.2%;
+	
+	img
+	{
+		width: $fullWidth;
+		height: $fullWidth;
+	}
+}
+
+#reelWrapA, #reelWrapC, #reelWrapE, #reelWrapG
+{
+	float: $floatLeft;
+	margin: .3% 0 0 3%;
+	width: 17%;
+}
+
+#movieWrap
+{
+	width: 81%;
+	margin: 1% 0 0 9.46%;
+	height: 315.5px;
+	position: absolute;
+	z-index: 20;
+	overflow: hidden;
+	
+	
+	/*FIRST SET*/
+	.setA
+	{
+		width: $fullWidth;
+		list-style: none;
+		background: none !important;
+		position: relative !important;
+    	z-index: 1 !important;
+		margin-bottom: 5%;
+		float: $floatLeft;
+		padding: 0;
+		
+		li
+		{
+			width: 24.5%;
+			margin-right: .5%;
+			border: solid $movColor4 2px;
+			border-radius: 8.5%;
+			padding: 0;
+			float: $floatLeft;
+			overflow: hidden;
+			
+			h2
+			{
+				padding: .5% .5% .3% .5%;
+				background: $movColor1;
+				background-image: none !important;
+				border: 0px;
+				border-radius: 22px 22px 0 0;
+				background-color: rgba(0, 0, 0, .5);
+				padding-left: 5%;
+				position: absolute;
+        		z-index: 1;
+				width: $fullWidth;
+				font-size: 1.2em;
+			}
+			
+			img
+			{
+				width: $fullWidth;
+				height: $fullWidth;
+			}
+			
+			.bodyCopy
+			{
+				width: $fullWidth;
+				list-style: none;
+				color: $movColor2;
+				background-color: rgba(190, 136, 55, .8);
+				background-image: none !important;
+				line-height: 18px;
+				margin-bottom: 0;
+				bottom: 0;
+				position: absolute;
+				z-index: 1;
+				padding: .5% 0 2% 0;
+				border-top: solid 3px $movColor2;
+				border-radius: 0 0 22px 22px;
+				overflow: hidden;
+				font-size: 1em;
+				
+				li:nth-child(1)
+				{
+					float: $floatLeft;
+					color: $movColor1;
+					border: 0px;
+					border-radius: 0px;
+					background-image: none !important;
+					width: 30%;
+					padding: 0;
+					margin: 0 1% 0 18%;
+					font-weight: $movFontBold;
+					text-align: right;
+					font-variant: small-caps;
+				}
+					
+				li:nth-child(2)
+				{
+					border: 0px;
+					border-radius: 0px;
+					background-image: none !important;
+					text-align: left;
+					width: 35%;
+				}
+			}
+		}
+		
+		:nth-child(1)
+		{
+			margin-left: 0;
+		}
+	}
+	
+	
+	
+	/*SECOND SET*/
+	.setB, .setC, .setD, .setE, .setF, .setG, .setH, .setI, .setJ, .setK
+	{
+		width: $fullWidth;
+		list-style: none;
+		background: none !important;
+		margin-bottom: 5%;
+		float: $floatLeft;
+		margin-left: 1.2%;
+		
+		li
+		{
+			float: $floatLeft;
+			width: 23.9%;
+			margin-right: .5%;
+			border: solid $movColor4 2px;
+			border-radius: 8.5%;
+			padding: 0;
+			overflow: hidden;
+			
+			h2
+			{
+				padding: .5% .5% .3% .5%;
+				background: $movColor1;
+				background-image: none !important;
+				border: 0px;
+				border-radius: 22px 22px 0 0;
+				background-color: rgba(0, 0, 0, .5);
+				padding-left: 5%;
+				position: absolute;
+				z-index: 1;
+				width: $fullWidth;
+				font-size: 1.2em;
+			}
+			
+			img
+			{
+				width: $fullWidth;
+				height: $fullWidth;
+			}
+			
+			.bodyCopy
+			{
+				width: $fullWidth;
+				list-style: none;
+				font-size: 1em;
+				color: $movColor2;
+				background-color: rgba(190, 136, 55, .8);
+				background-image: none !important;
+				margin-bottom: 0;
+				bottom: 0;
+				position: absolute;
+				z-index: 1;
+				line-height: 18px;
+				padding: .5% 0 2% 0;
+				border-top: solid 3px $movColor2;
+				border-radius: 0 0 22px 22px;
+				
+				li:nth-child(1)
+				{
+					float: $floatLeft;
+					color: $movColor1;
+					border: 0px;
+					border-radius: 0px;
+					background-image: none !important;
+					width: 30%;
+					padding: 0;
+					margin: 0 1% 0 18%;
+					font-weight: $movFontBold;
+					text-align: right;
+					font-variant: small-caps;
+					overflow: visible;
+				}
+					
+				li:nth-child(2)
+				{
+					border: 0px;
+					border-radius: 0px;
+					background-image: none !important;
+					text-align: left;
+					width: 35%;
+				}
+			}
+		}
+		
+		:nth-child(1)
+		{
+			margin-left: 0;
+		}
+	}
+}
+
+#clapperTwo, #clapperFour, #clapperSix, #clapperEight
+{
+	float: $floatLeft;
+	margin: 7.3% 0 0 92.5%;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	width: 2.2%;
+	
+	img
+	{
+		width: $fullWidth;
+		height: $fullWidth;
+	}
+}
+
+#reelWrapB, #reelWrapD, #reelWrapF, #reelWrapH
+{
+	float: right;
+	margin: .3% 3.5% 0 0;
+	width: 17%;
+}
+
+
+
+/*FOOTER*/
+footer
+{
+	float: $floatLeft;
+	width: $fullWidth;
+	margin: 5% auto 0 auto;
+	text-align: center;
+	
+	#copyRight
+	{
+		font-size: .8em;
+		color: $movColor2;
+		margin: 0 auto;
+		text-align: center;
+		display: inline-block;
+		width: 20%;
+		
+		p
+		{
+			float: $floatLeft;	
+			margin-right: 2%;		
+		}
+		
+		#twitter
+		{
+			float: $floatLeft;
+			margin-right: 2%;
+			
+			img
+			{
+				width: $fullWidth;
+			}
+		}
+		
+		#fb
+		{
+			float: $floatLeft;
+			
+			img
+			{
+				width: $fullWidth;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1640px) and (max-width: 1800px)
+{
+	#movieWrap > ul
+	{		
+		li
+		{			
+			h2
+			{
+				border-radius: 18px 18px 0 0 !important;
+			}
+			
+			.bodyCopy
+			{
+				font-size: .9em !important;
+				border-radius: 0 0 18px 18px !important;
+				
+				:nth-child(odd)
+				{
+					width: 30% !important;
+				}
+					
+				:nth-child(even)
+				{
+					width: 30% !important;
+				}
+			}
+		}
+	}
+	
+	footer
+	{
+		#copyRight
+		{
+			width: 50%;
+			margin-left: 30%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1640px)
+{
+	#movieWrap > ul
+	{		
+		li
+		{			
+			h2
+			{
+				border-radius: 18px 18px 0 0 !important;
+			}
+			
+			.bodyCopy
+			{
+				font-size: .8em !important;
+				border-radius: 0 0 16px 16px !important;
+				
+				:nth-child(odd)
+				{
+					width: 30% !important;
+				}
+					
+				:nth-child(even)
+				{
+					width: 30% !important;
+				}
+			}
+		}
+	}
+	
+	footer
+	{
+		#copyRight
+		{
+			width: 50%;
+			margin: 4.5% 0 0 30%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px)
+{
+	#movieWrap > ul
+	{
+		li
+		{			
+			h2
+			{
+				border-radius: 10px 10px 0 0 !important;
+				font-size: 1em !important;
+			}
+			
+			.bodyCopy
+			{
+				border-radius: 0 0 12px 12px !important;
+				font-size: 1em !important;
+				
+				:nth-child(odd)
+				{
+					display: none;
+				}
+					
+				:nth-child(even)
+				{
+					width: $fullWidth !important;
+					text-align: center !important;
+				}
+			}
+		}
+	}
+	
+	.setA, .setB, .setC, .setD, .setE, .setF, .setG, .setH, .setI, .setJ, .setK
+	{
+		margin-bottom: 15% !important;
+	}
+	
+	#twoTen
+	{
+		#movieWrap
+		{
+			.setJ
+			{
+				li:nth-child(3)
+				{
+					.bodyCopy
+					{
+						:nth-child(even)
+						{
+							width: $fullWidth !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	footer
+	{
+		#copyRight
+		{
+			width: 50%;
+			margin-left: 20%;
+		}
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px)
+{
+	#headOne
+	{
+		h1
+		{
+			width: 350px;
+			padding: 0;
+		}
+	}
+	
+	#logo
+	{
+		margin-top: 7%;
+		width: 35%;
+	}
+	
+	#movieWrap > ul
+	{		
+		li
+		{			
+			h2
+			{
+				border-radius: 10px 10px 0 0 !important;
+				font-size: 1em !important;
+			}
+			
+			.bodyCopy
+			{
+				border-radius: 0 0 12px 12px !important;
+				font-size: 1em !important;
+				
+				:nth-child(odd)
+				{
+					display: none;
+				}
+					
+				:nth-child(even)
+				{
+					width: $fullWidth !important;
+					text-align: center !important;
+				}
+			}
+		}
+	}
+	
+	#twoTen
+	{
+		#movieWrap
+		{
+			.setJ
+			{
+				li:nth-child(3)
+				{
+					.bodyCopy
+					{
+						:nth-child(even)
+						{
+							width: $fullWidth !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	footer
+	{
+		#copyRight
+		{
+			width: 50%;
+			margin-left: 15%;
+		}
+	}
+}

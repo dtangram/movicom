@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+$movColor1: #000000;
+$movColor2: #FFFFFF;
+$movColor3: #BE8837;
+$movColor4: #503000;
+$movColor5: #804D00;
+$movFont: 'Titillium Web', sans-serif;
+$movFontSize: 20px;
+$movFontBold: bold;
+$movFontCenter: center;
+$fullWidth: 100%;
+$fullHeight: 100%;
+$floatLeft: left;
+$floatRight: right;
+$decorateNone: none;
+$decorateUnder: underline;
+
+#movieWrap
+{
+	.setA, .setB, .setC, .setD, .setE, .setF, .setG, .setH, .setI, .setJ, .setK
+	{
+		> li:nth-child(1)
+		{
+			border-radius: 7.4%;
+			position: relative;
+		}
+			
+		> li:nth-child(2), > li:nth-child(3), > li:nth-child(4)
+		{
+			position: relative;
+		}
+	}
+}
+
+#twoTen
+{
+	#movieWrap
+	{
+		.setJ
+		{
+			> li:nth-child(3)
+			{
+				position: relative;
+				
+				.bodyCopy
+				{
+					li:nth-child(2)
+					{
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
+}
