@@ -6,11 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/dtangram/movicom"
+  },
   "keywords": [
     "any",
     "keyword"
   ],
   "author": "Douglas T. Angram",
   "license": "ISC",
-  "git repository": "movicom"
+  "devDependencies": {
+    "gulp-uglify": "^1.5.4"
+  }
 }
